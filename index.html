@@ -42,9 +42,9 @@
                         </div>
                       <h2 class="card-title">K. Accessories</h2>
                       <p>55 TK</p>
-                      <div class="card-actions">
-                        <button class="btn btn-outline btn-secondary">Buy Now</button>
-                      </div>
+                      
+                        <button onclick="productList(this)" class="btn btn-outline btn-secondary">Buy Now</button>
+                      
                     </div>
                   </div>
                 <div class="card w-60 bg-base-100 shadow-2xl p-4 mb-4">
@@ -61,9 +61,9 @@
                         </div>
                       <h2 class="card-title">K. Accessories</h2>
                       <p>155 TK</p>
-                      <div class="card-actions">
-                        <button class="btn btn-outline btn-secondary">Buy Now</button>
-                      </div>
+                      
+                        <button onclick="productList(this)" class="btn btn-outline btn-secondary">Buy Now</button>
+                      
                     </div>
                   </div>
                 <div class="card w-60 bg-base-100 shadow-2xl p-4">
@@ -80,9 +80,9 @@
                         </div>
                       <h2 class="card-title">Home Cooker</h2>
                       <p>80 TK</p>
-                      <div class="card-actions">
-                        <button class="btn btn-outline btn-secondary">Buy Now</button>
-                      </div>
+                      
+                        <button onclick="productList(this)" class="btn btn-outline btn-secondary">Buy Now</button>
+                      
                     </div>
                   </div>
             </div>
@@ -102,9 +102,9 @@
                         </div>
                       <h2 class="card-title">Sports Back Cap</h2>
                       <p>59 TK</p>
-                      <div class="card-actions">
-                        <button class="btn btn-outline btn-secondary">Buy Now</button>
-                      </div>
+                      
+                        <button onclick="productList(this)" class="btn btn-outline btn-secondary">Buy Now</button>
+                      
                     </div>
                   </div>
                 <div class="card w-60 bg-base-100 shadow-2xl p-4 mb-4">
@@ -121,9 +121,9 @@
                         </div>
                       <h2 class="card-title">Full Jersey Set</h2>
                       <p>125 TK</p>
-                      <div class="card-actions">
-                        <button class="btn btn-outline btn-secondary">Buy Now</button>
-                      </div>
+                      
+                        <button onclick="productList(this)" class="btn btn-outline btn-secondary">Buy Now</button>
+                      
                     </div>
                   </div>
                 <div class="card w-60 bg-base-100 shadow-2xl p-4">
@@ -140,9 +140,9 @@
                         </div>
                       <h2 class="card-title">Sports cates</h2>
                       <p>90 TK</p>
-                      <div class="card-actions">
-                        <button class="btn btn-outline btn-secondary">Buy Now</button>
-                      </div>
+                      
+                        <button onclick="productList(this)" class="btn btn-outline btn-secondary">Buy Now</button>
+                      
                     </div>
                   </div>
             </div>
@@ -150,26 +150,28 @@
         <section class="mt-32">
             <div class="card w-96 bg-base-100 shadow-xl">
                 <div class="card-body">
-                  <h2 class="card-title">Have coupon?</h2>
+                  <h2 class="card-title mb-6">Have coupon?</h2>
                   <div class="card-actions justify-end mb-10">
                     <input class="border py-3 px-2 w-60 rounded" type="text" name="" id="input" placeholder="Coupon code">
-                    <button class="btn btn-secondary" disabled>Apply</button>
+                    <button id="apply-btn" class="btn btn-secondary" disabled>Apply</button>
                   </div>
                 </div>
               </div>
 
               <div class="card w-96 bg-base-100 shadow-xl mt-10">
                 <div class="card-body font-bold">
-                  <p>Total Price : </p>
+                    <h3 id="product-list"></h3>
+                  <p>Total Price : <span id="total-price">00</span>TK</p>
                   <p>Discount : </p>
                   <p>Total : </p>
                   <div class="card-actions ">
-                    <button class="btn btn-secondary w-full" disabled>Make Purchase</button>
+                    <button id="purchase-btn" class="btn btn-secondary w-full" disabled>Make Purchase</button>
                   </div>
                 </div>
               </div>
         </section>
     </main>
     <footer></footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
