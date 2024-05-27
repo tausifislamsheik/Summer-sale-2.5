@@ -33,7 +33,7 @@
                       <img src="images/prod1.png" alt="" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <div class="text-yellow-600">
+                        <div class="text-yellow-500">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -52,7 +52,7 @@
                       <img src="images/prod2.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <div class="text-yellow-600">
+                        <div class="text-yellow-500">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -71,7 +71,7 @@
                       <img src="images/prod3.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <div class="text-yellow-600">
+                        <div class="text-yellow-500">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -93,7 +93,7 @@
                       <img src="images/prod4.png" alt="" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <div class="text-yellow-600">
+                        <div class="text-yellow-500">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -112,7 +112,7 @@
                       <img src="images/prod5.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <div class="text-yellow-600">
+                        <div class="text-yellow-500">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -131,7 +131,7 @@
                       <img src="images/prod6.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <div class="text-yellow-600">
+                        <div class="text-yellow-500">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -161,11 +161,27 @@
               <div class="card w-96 bg-base-100 shadow-xl mt-10">
                 <div class="card-body font-bold">
                     <h3 id="product-list"></h3>
-                  <p>Total Price : <span id="total-price">00</span>TK</p>
-                  <p>Discount : </p>
-                  <p>Total : </p>
+                  <p>Total Price : <span id="total-price">00 </span> TK</p>
+                  <p>Discount : <span id="discount">00</span> TK</p>
+                  <p>Total : <span id="total">00</span> TK</p>
                   <div class="card-actions ">
-                    <button id="purchase-btn" class="btn btn-secondary w-full" disabled>Make Purchase</button>
+                    <button onclick="my_modal_1.showModal()" id="purchase-btn" class="btn btn-secondary w-full" disabled>Make Purchase</button>
+
+                    
+<!-- <button class="btn" onclick="my_modal_1.showModal()">open modal</button> -->
+<dialog id="my_modal_1" class="modal">
+  <div class="modal-box text-center">
+    <img class="mx-auto" src="images/congo.png" alt="">
+    <h3 class="font-bold text-3xl">Congratulations</h3>
+    <p class="py-4 text-slate-500">Your Purchase the product</p>
+    <div class="modal-action">
+      <form method="dialog">
+        
+        <button id="home-btn" class="btn btn-secondary mr-44">Go Home</button>
+      </form>
+    </div>
+  </div>
+</dialog>
                   </div>
                 </div>
               </div>
